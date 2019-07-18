@@ -33,7 +33,7 @@ func main() {
 結果：執行後第一個被print的為999  
 ![螢幕快照 2019-07-18 下午5.02.58.png](https://static.studygolang.com/190718/0eb639533c172c431ff4654c3426bf85.png)
 
-1.先看trace總覽，goroutines在runtime.main執行結束後開始下降（青藍色最高峰），也就是1000個G開始被調用消耗掉  
+1.先看trace總覽，goroutines在runtime.main執行結束後才開始調用（此圖青藍色最高峰處），也就是1000個G開始被單核心執行  
   
 ![螢幕快照 2019-07-18 下午4.49.47.png](https://static.studygolang.com/190718/df5e8dc9e441fb66f58403b24dcd18bd.png)  
   
